@@ -1,0 +1,4 @@
+/**input.wxss**/
+.contain{width:100%;padding: 30rpx 20rpx;box-sizing: border-box;}   
+    .c-input{margin-top: 20rpx;border-radius: 5rpx;border:1rpx solid #ccc;line-height: 70rpx;height: 70rpx;padding: 0 20rpx;}
+    .c-style{color: red;}

@@ -1,0 +1,14 @@
+<!--input.wxml-->
+<view class="contain">
+    <view class="box">
+        <input type='text' class="c-input" placeholder='请输入内容'></input>
+        <input type='text' class="c-input" placeholder='请输入内容' placeholder-class='input-placeholder' placeholder-style='color:red'></input>
+        <input type='text' class="c-input" placeholder='请输入内容' disabled='true'></input>
+        <input type='text' class="c-input" placeholder='请输入内容' cursor-spacing='10'></input>
+        <input type='text' class="c-input" placeholder='设置键盘右下角的字' confirm-type='done'></input>
+        <input type='text' class="c-input" placeholder='触发input事件' bindinput='bindInput'></input>
+        <input type='text' class="c-input" placeholder='触发获取焦点' bindfocus='bindFocus'></input>
+        <input type='text' class="c-input" placeholder='触发失去焦点' bindblur='bindBlur'></input>
+        <input type='text' class="c-input" placeholder='点击完成触发' bindconfirm='bindConfirm'></input>
+    </view>
+</view>

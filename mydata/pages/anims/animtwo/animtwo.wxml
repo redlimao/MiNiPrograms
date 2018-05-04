@@ -1,0 +1,4 @@
+<!--animtwo.wxml-->
+<view class="contain">
+    <view class="anim" style='background-image:url(../../../images/anim.png);animation:anim_a 1s steps(1,start) infinite .5s;-webkit-animation:anim_a 1s steps(1,start) infinite .5s;'></view>
+</view>

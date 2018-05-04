@@ -1,0 +1,4 @@
+<!--list.wxml-->
+<view class="contain">
+    <view class="time">{{count_time}}</view>
+</view>

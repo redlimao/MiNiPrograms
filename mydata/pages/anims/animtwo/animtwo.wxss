@@ -1,0 +1,27 @@
+/**animtwo.wxss**/
+.contain{width:100%;padding: 30rpx 20rpx;box-sizing: border-box;}  
+    .anim{width: 252rpx;height: 136rpx;background-position: -252rpx 0;margin: 20rpx auto;}
+
+ @keyframes anim_a{
+    0%{background-position:0 0;}
+    12.5%{background-position:-252rpx 0;}
+    25%{background-position:-504rpx 0;}
+    37.5%{background-position:-756rpx 0;}
+    50%{background-position:-1008rpx 0;}
+    62.5%{background-position:-1260rpx 0;}
+    75%{background-position:-1512rpx 0;}
+    87.5%{background-position:-1764rpx 0;}
+    100%{background-position:0 0;}
+}  
+@-webkit-keyframes anim_a{
+    0%{background-position:0 0;}
+    12.5%{background-position:-252rpx 0;}
+    25%{background-position:-504rpx 0;}
+    37.5%{background-position:-756rpx 0;}
+    50%{background-position:-1008rpx 0;}
+    62.5%{background-position:-1260rpx 0;}
+    75%{background-position:-1512rpx 0;}
+    87.5%{background-position:-1764rpx 0;}
+    100%{background-position:0 0;}
+} 
+

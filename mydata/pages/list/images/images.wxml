@@ -1,0 +1,4 @@
+<!--images.wxml-->
+<view class="contain">
+    <button bindtap='bindchooseImage'>从本地相册选择图片或使用相机拍照。</button>
+</view>

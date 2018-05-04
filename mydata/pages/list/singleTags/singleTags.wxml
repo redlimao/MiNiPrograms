@@ -1,0 +1,13 @@
+<!--list.wxml-->
+<view class="contain">
+    <text class="h1">多单选标签并保存到数组中</text>
+    <view class="box-a">
+        <view class="item {{item.flag == 1 ? '' : 'on'}}" wx:for="{{tags_1}}" wx:key="{{index}}" data-id='{{index}}' bindtap='bindTags' data-tag='tag1'>{{item.name}}</view>
+    </view>
+    <!-- <view class="box-a">
+        <view class="item {{item.flag == 1 ? '' : 'on'}}" wx:for="{{tags_2}}" wx:key="{{index}}" data-id='{{index}}' bindtap='bindTags'>{{item.name}}</view>
+    </view> -->
+    <view class="btn-input" bindtap='bindTagsName'>点击按钮输出被选中的值</view>
+    <text class="p" wx:if="{{tags_array.length != 0}}">{{tags_array}}</text>
+    <text class="p" wx:else>没有被选中的标签</text>
+</view>

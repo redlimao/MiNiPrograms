@@ -1,0 +1,75 @@
+{
+    "pages":[
+        "pages/index/index",
+        "pages/lists/lists",
+        "pages/modules/modules",
+        "pages/canvas/canvas",
+        "pages/css3/css3"
+    ],
+    "subPackages":[
+        {
+            "root":"pages/list/",
+            "pages":[
+                "tags/tags",
+                "star/star",
+                "countDown/countDown",
+                "leftDelete/leftDelete",
+                "singleTags/singleTags",
+                "location/location",
+                "getRecorderManager/getRecorderManager",
+                "images/images",
+                "menus/menus",
+                "pop/pop",
+                "shake/shake",
+                "storag/storag"
+            ]
+        },
+        {
+            "root": "pages/module/",
+            "pages": [
+                "scrollView/scrollView",
+                "threePicker/threePicker",
+                "map/map",
+                "swiper/swiper",
+                "movableArea/movableArea",
+                "icons/icons",
+                "text/text",
+                "progress/progress",
+                "button/button",
+                "checkbox/checkbox",
+                "input/input",
+                "picker/picker",
+                "radio/radio",
+                "slider/slider"
+            ]
+        },
+        {
+            "root": "pages/canvass/",
+            "pages": [
+                "animation/animation",
+                "position/position"
+            ]
+        },
+        {
+            "root":"pages/shopping/",
+            "pages":[
+                "shopping_one/shopping_one"
+            ]
+        },
+        {
+            "root": "pages/anims/",
+            "pages": [
+                "animone/animone",
+                "animtwo/animtwo",
+                "animthree/animthree",
+                "animfour/animfour"
+            ]
+        }
+    ],
+    "window":{
+        "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor": "#f0ad4e",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle":"white"
+    }
+}

@@ -1,0 +1,6 @@
+<!--text.wxml-->
+<view class="contain">
+    <text space='true'>怨\n我百岁无忧</text>
+    <text space='true'>怨\t我百岁无忧</text>
+    <text space='true'>怨我百岁无忧</text>
+</view>

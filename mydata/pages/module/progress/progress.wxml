@@ -1,0 +1,11 @@
+<!--text.wxml-->
+<view class="contain">
+    <text>无动画</text>
+    <progress percent='50' stroke-width='10'></progress>
+    <text>有动画</text>
+    <progress percent='50'  active='true' stroke-width='10'></progress>
+    <text>有动画</text>
+    <progress percent='50'  active='true' stroke-width='10' active-mode='backwards'></progress>
+    <text>有动画</text>
+    <progress percent='50'  active='true' stroke-width='10' active-mode='forwards'></progress>
+</view>

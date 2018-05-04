@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container-a">
+    <view class="s-wrap" wx:for="{{shops}}" wx:key="{{index}}" wx:for-item="shop_item">
+        <!-- 标题 -->
+        <view class="s-box">
+            <!-- 选中按钮 -->
+            <icon type='success' color="rgb(244,68,68)" size='20' wx:if="{{shop_item.list_selects}}" bindtap='selectAll' data-index='{{index}}'></icon>
+            <icon type='circle' size='20' wx:else bindtap='selectAll' data-index='{{index}}'></icon>
+            <!-- 店铺标题 -->
+            <text class="s-box-tit">{{shop_item.shop_tit}}</text>
+        </view>
+        <!-- 内容 -->
+        <view class="s-list" wx:for="{{shop_item.shop_context}}" wx:for-item="shop_context" wx:key="{{shop_item.index}}">
+            <!-- 选中按钮 -->
+            <icon type='success' color="rgb(244,68,68)" size='20' bindtap="bindSingleSelect" wx:if="{{shop_context.selected}}" data-id="{{index}}" data-index="{{shop_item.id}}"></icon>
+            <icon type='circle' size='20' bindtap="bindSingleSelect" wx:else data-id="{{index}}" data-index="{{shop_item.id}}"></icon>
+            <!-- 商品图片 -->
+            <image class="s-list-img" src="{{shop_context.shop_imgUrl}}"></image>
+            <view class="s-info">
+                <!-- 商品标题 -->
+                <text class="s-info-tit">{{shop_context.shop_ctit}}</text>
+                <view class="s-info-box">
+                  <!-- 加减商品 -->
+                  <view class="math-box">
+                        <view class="btn-subtract" bindtap='bindsubtract' data-id="{{shop_item.id}}" data-index='{{index}}'>-</view>
+                        <view class="shop-list-number">{{shop_context.shop_numbers}}</view>
+                        <view class="btn-add" bindtap='bindadd' data-id="{{shop_item.id}}" data-index='{{index}}'>+</view>
+                  </view>
+                  <!-- 商品价格 -->
+                  <text class="s-info-txt1">¥{{shop_context.shop_money}}</text>
+                  <!-- 商品原价 -->
+                  <text class="s-info-txt2">¥{{shop_context.shop_cutmoney}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 全选与结算 -->
+<view class="r-wrap">
+    <icon type='success' color="rgb(244,68,68)" size='20' wx:if="{{list_selectAll}}" bindtap='selectAlls'></icon>
+    <icon type='circle' size='20' wx:else bindtap='selectAlls'></icon>
+    <view class="r-txt1">全选</view>  
+    <view class="r-txt2">合计：<text class="color-tip">￥{{all_money}}</text></view>       
+    <view class="btn">结算</view>
+</view>

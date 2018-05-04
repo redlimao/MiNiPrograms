@@ -1,0 +1,10 @@
+/**list.wxss**/
+.contain{width:100%;padding: 30rpx 20rpx;box-sizing: border-box;}
+    .slider-wrap{width: 400rpx;margin: 0 auto;}
+    .scroll-view_H{white-space: nowrap;margin: 0 auto;}
+    .scroll-view-item{height: 150rpx;width:400rpx;}
+    .scroll-view-item1{width: 200rpx;height: 200rpx;display: inline-block;}
+    .bc_green{background-color:green;}
+    .bc_red{background-color:red;}
+    .bc_yellow{background-color:yellow;}
+    .bc_blue{background-color:blue;}

@@ -1,0 +1,7 @@
+<!--leftDelete.wxml-->
+<view class="contain">
+    <view class="item" wx:for="{{list}}" wx:key="{{index}}">
+        <view class="item-info" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" style="transform:translateX(-{{item.translateX}}px)" data-id='{{index}}'>内容{{index}}</view>
+        <view class="item-btn" bindtap='bindDelete' data-id='{{index}}'>删除</view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+<!--list.wxml-->
+<view class="contain">
+    <text class="h1">星级评价</text>
+    <view class="box-a">
+        <image class="star{{index+1}} {{item.flag == 1 ? '' : 'on'}}" src="../../../images/star_light.png" wx:for="{{star}}" wx:key="{{index}}" bindtap='bindStar' data-id='{{index}}'></image>
+        <image class="star{{index+1}} on" src="../../../images/star_grey.png" wx:for="{{star}}" wx:key="{{index}}" bindtap='bindStar' data-id='{{index}}'></image>
+    </view>
+    <text class="p">被选中的星星个数：{{star_select}}，未选中的星星个数：{{5 - star_select}}</text>
+</view>

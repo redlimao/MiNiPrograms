@@ -1,0 +1,2 @@
+/**list.wxss**/
+.contain{width:100%;padding: 30rpx 20rpx;box-sizing: border-box;}

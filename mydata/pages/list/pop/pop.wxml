@@ -1,0 +1,9 @@
+<!--pop.wxml-->
+<view class="contain">
+    <view class="btn" bindtap='bindShowPop1'>打开弹窗</view>
+</view>
+
+<view class="pop-bg {{flag_pop1 == 1 ? '' : 'on'}}" bindtap='bindHidePop1'></view>
+<view class="pop-con {{flag_pop1 == 1 ? '' : 'on'}}">
+    <view class="close" bindtap='bindHidePop1'>×</view>
+</view>

@@ -1,0 +1,5 @@
+/**storag.wxss**/
+.wrap{padding: 20rpx;width: 100%;box-sizing: border-box;display: block;}
+    .b-input{padding: 0 20rpx;border:1rpx solid #eee;border-radius: 5rpx;height: 80rpx;line-height: 80rpx;background-color: #fff;display: block;}
+    .btns{margin: 20rpx auto;display: block;width: 200rpx;height: 60rpx;line-height: 60rpx;text-align: center;}
+    .texts{padding: 40rpx 20rpx;width: 100%;box-sizing: border-box; border: 1rpx solid #eee;background-color: #fff;height: 200rpx;}

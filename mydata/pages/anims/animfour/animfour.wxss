@@ -1,0 +1,19 @@
+/**animtwo.wxss**/
+.contain{width:100%;padding: 30rpx 20rpx;box-sizing: border-box;}  
+    .item{height: 220rpx;width: 100%;overflow: hidden;position: relative;}
+        .i-img{height: 220rpx;width: 1500rpx;position: absolute;top: 0;left: 0;}
+        .info{width: 698rpx;height: 208rpx;position: absolute;top: 6rpx;left: 6rpx;background-color: #fff;}
+        .anim{animation: anim_a 10s linear infinite;}
+
+@keyframes anim_a{
+    0%{transform: translateX(0rpx);}
+    100%{transform: translateX(-750rpx)}
+}
+
+/* @keyframes anim_b{
+    0%{transform: translateX(-876rpx) rotateX(180deg);}
+    100%{transform: translateX(0rpx) rotateX(180deg)}
+} */
+
+
+

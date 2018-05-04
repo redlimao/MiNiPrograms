@@ -1,0 +1,6 @@
+/**list.wxss**/
+.contain{width:100%;padding: 30rpx 20rpx;box-sizing: border-box;}   
+    .slide-image{width: 710rpx;height: 360rpx;}
+    .menu{margin-top: 20rpx;display: flex;justify-content: center;}
+        .item{width: 100rpx;height: 10rpx;background-color: #a1e7f8;margin-right: 10rpx;}
+        .item.on{background-color: #f58021;}

@@ -1,0 +1,26 @@
+/*=====购物车=====s>=shop */
+/* ======滑动菜单===== s>=slider */
+.slider-wrap{padding:0 24rpx;border-top:1rpx solid rgb(238,238,238);background-color: #fff;}
+	.slider-box{height:80rpx;display:flex;justify-content:space-around;}
+	.slider-menu{margin: 0 20rpx;width:112rpx;height:80rpx;line-height:80rpx;font-size:28rpx;color:rgb(51,51,51);}
+    .slider-menu.on{border-bottom:4rpx solid #f44444;}
+
+.s-wrap{padding:0 24rpx 24rpx 24rpx;border-top:1rpx solid rgb(238,238,238);margin-bottom:16rpx;background:#fff;}
+/*=====店铺层====== */
+	.s-box{height:90rpx;display:flex;align-items:center;}
+	.s-box-tit{padding-left:24rpx;font-size:26rpx;color:rgb(51,51,51);}
+/*=====商品层======*/
+	.s-list{height:207rpx;display:flex;align-items:center;border-top:1rpx solid rgb(238,238,238);}
+		.s-list-img{width:184rpx;height:184rpx;margin-left:23rpx;}
+		.s-info{flex:1; padding-left:24rpx;height:184rpx;display:flex;flex-direction:column;}
+			.s-info-tit{font-size:28rpx;color:rgb(51,51,51);height:84rpx;line-height:42rpx;}
+			.s-info-box{display:flex;flex:1;align-items:flex-end;height:40rpx;}
+        .s-info-txt1{color:rgb(244,68,68);font-size:40rpx;line-height:1;}
+			.s-info-txt2{padding-left:20rpx;font-size:26rpx;text-decoration:line-through;color:rgb(154,154,154);}
+/*=====全选与结算=====*/
+.r-wrap{position:fixed;left:0;bottom:0;width:100%;height:96rpx;display:flex;align-items:center;background:#fff;padding-left:24rpx;}
+	.r-txt1{font-size:30rpx;color:rgb(55,55,55);padding-left:20rpx;flex:1;}
+	.r-txt2{padding:0 50rpx;font-size:30rpx;color:rgb(55,55,55);}
+	.btn{width:210rpx;height:96rpx;background:#f44444;color:#fff;font-size:30rpx;text-align:center;line-height:96rpx;}
+
+				

@@ -1,0 +1,15 @@
+/**menus.wxss**/
+.contain{width:100%;padding: 30rpx 20rpx;box-sizing: border-box;}
+    .title{line-height: 80rpx;color: #333;font-size: 30rpx;}
+    .wrap-a{display: flex;width: 100%;justify-content: space-around;background-color: #fff;}
+        .a-item{height: 80rpx;line-height: 80rpx;width: 120rpx;border-bottom: 2rpx solid transparent;text-align: center;font-size: 32rpx;color: #333;}
+        .a-item.on{border-bottom: 2rpx solid #333;}
+    .wrap-b{width: 100%;background-color: #fff;}
+        .box-b{display: flex;display: -webkit-box;}
+            .b-item{height: 80rpx;line-height: 80rpx;padding: 0 10rpx;margin: 0 10rpx;border-bottom: 2rpx solid transparent;text-align: center;font-size: 32rpx;color: #333}
+            .b-item.on{border-bottom: 2rpx solid #333;}
+    .wrap-c{width: 100%;background-color: #fff;}
+        .box-c{display: flex;display: -webkit-box;position: relative;}
+            .c-item{height: 80rpx;line-height: 80rpx;padding: 0 10rpx;margin: 0 10rpx;border-bottom: 2rpx solid transparent;text-align: center;font-size: 32rpx;color: #333;box-sizing: border-box;}
+            .c-item.on{border-bottom: 2rpx solid #333;}
+            .tip{position: absolute;}

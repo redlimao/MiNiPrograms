@@ -1,0 +1,6 @@
+<view class="contain">
+    <view class="btn-output" bindtap='bindChooseGPS'>选择定位地址</view>
+    <text class="txt">{{address1}}</text>
+    <view class="btn-output" bindtap='bindOpenGPS'>打开定位地址</view>
+    <text class="txt">{{address2}}</text>
+</view>

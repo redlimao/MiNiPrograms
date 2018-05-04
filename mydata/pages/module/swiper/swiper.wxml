@@ -1,0 +1,11 @@
+<!--swiper.wxml-->
+<view class="contain">
+    <swiper indicator-dots="true" style="width:710rpx;height:360rpx;" bindchange='bindHint' bindanimationfinish='bindAnimEnd'>
+        <swiper-item wx:for="{{img}}" wx:key="{{index}}">
+            <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+    </swiper>
+    <view class="menu">
+        <view class="item {{current == index ? 'on' : ''}}" wx:for="{{img}}" wx:key="{{index}}"></view>
+    </view>
+</view>

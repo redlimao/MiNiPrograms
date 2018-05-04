@@ -1,0 +1,9 @@
+<!--radio.wxml-->
+<view class="contain" >
+    <radio-group bindchange="radioChange" class="wrap">
+        <view class="box" wx:for="{{list}}" wx:key="{{item.index}}">
+            <radio id="{{item.name}}" value='{{item.name}}' checked='false' hidden>{{item.value}}</radio>
+            <label for="{{item.name}}" class="tip {{item.checked == true ? 'on' : ''}}">{{item.value}}</label>
+        </view>
+    </radio-group>
+</view>

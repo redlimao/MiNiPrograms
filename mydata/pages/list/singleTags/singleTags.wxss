@@ -1,0 +1,8 @@
+/**list.wxss**/
+.contain{width:100%;padding: 30rpx 20rpx;box-sizing: border-box;}
+    .h1{line-height: 80rpx;color: #333;font-size: 32rpx;display: block;}
+    .box-a{border: 1rpx solid #ccc;border-radius: 10rpx;padding: 24rpx;display: flex;position: relative;}
+        .item{padding: 0 20rpx;height: 40rpx;line-height: 40rpx;margin:0 20rpx 10rpx 0;background-color: #ccc;color: #333;font-size: 26rpx;border-radius: 5rpx;}
+        .item.on{background-color: #f44444;color: #fff;}
+    .btn-input{line-height: 56rpx;font-size: 28rpx;height:56rpx;background-color: #333;color: #fff;border-radius: 5rpx;margin-top: 10rpx;display: block;text-align: center;}
+    .p{line-height: 60rpx;color: #333;font-size: 32rpx;display: block;}

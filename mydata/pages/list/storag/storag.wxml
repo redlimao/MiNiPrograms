@@ -1,0 +1,9 @@
+<!--storag.wxml-->
+<view class="contain">
+    <form report-submit="true" bindsubmit='bindSubmit' class="wrap">
+        <input class="b-input" name="name" type='text' placeholder='请输入要存储的内容'></input>
+        <button class='btns' type='primary' size='mini' formType="submit" loading='{{flag_load1}}'>存储</button>
+        <textarea placeholder="展示存储的内容" value='{{array}}' disabled='true' class="texts">{{array}}</textarea>
+        <button class='btns' type='primary' size='mini' loading='{{flag_load2}}' bindtap='bindDelete'>删除</button>
+    </form>
+</view>

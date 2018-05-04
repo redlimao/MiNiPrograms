@@ -1,0 +1,5 @@
+<!--position.wxml-->
+<view class="contain">
+    
+</view>
+<view class="btn-place" bindtap='bindPlace'>滚动到指定位置</view>

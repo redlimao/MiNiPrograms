@@ -1,0 +1,15 @@
+<!--picker.wxml-->
+<view class="contain">
+    <text class="title">普通选择器</text>
+    <picker bindchange="bindPickerChange1" value="{{index_1}}" range="{{general}}">
+        {{general[index_1]}}
+    </picker>
+    <text class="title">多列选择器</text>
+    <picker mode="multiSelector" bindchange="bindPickerChange2" bindcolumnchange='bindColumnChange' value="{{eatIndex}}" range="{{eating}}">
+        {{eating[0][eatIndex[0]]}},{{eating[1][eatIndex[1]]}}
+    </picker>
+    <text class="title">时间选择器</text>
+    <picker mode="time" start='10:00' end='12:00' value='{{time}}' bindchange='bindTimeChange' >{{time}}</picker>
+    <text class="title">日期选择器</text>
+    <picker mode="date" start='2017-02-02' end='2018-02-02' value='{{date}}' bindchange='bindDateChange' >{{date}}</picker>
+</view>

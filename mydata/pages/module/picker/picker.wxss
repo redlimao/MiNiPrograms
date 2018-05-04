@@ -1,0 +1,4 @@
+/**picker.wxss**/
+.contain{width:100%;padding: 30rpx 20rpx;box-sizing: border-box;}   
+    .title{line-height: 60rpx;height: 60rpx;font-size: 30rpx;}
+    

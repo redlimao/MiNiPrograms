@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+    <image class="user-img {{anim1_flag == 1 ? '' : 'anim-opacity'}}" src="{{userInfo.avatarUrl}}"></image>
+    <text class="user-name">{{userInfo.nickName}}</text>
+    <view class="btn-main" bindtap='bindList'>小功能</view>
+    <view class="btn-main" bindtap='bindModule'>小程序组件</view>
+    <view class="btn-main" bindtap='bindShop'>购物车</view>
+    <view class="btn-main" bindtap='bindCanvas'>Canvas</view>
+    <view class="btn-main" bindtap='bindAnims'>Anims</view>
+</view>

@@ -1,0 +1,12 @@
+/**animation.wxss**/
+.contain{width:100%;padding: 30rpx 20rpx;box-sizing: border-box;}   
+.item{width: 200px;height: 200px;margin: 10px auto;position: relative;}
+		/*anim1*/
+		.circle{width: 200px;height: 200px;border-radius: 50%;background-color: #c59bcb;position: absolute;top: 0;left: 0;opacity: 0;}
+		.circle-anim1{animation: anim1 1.5s ease-out infinite .5s;}
+		.circle-anim2{animation: anim1 1.5s ease-out infinite 1s;}
+		.circle-anim3{animation: anim1 1.5s ease-out infinite 1.5s;}
+@keyframes anim1{
+    0%{opacity: 1;transform: scale(.2);}
+    100%{opacity: 0;transform: scale(1);}
+}

@@ -1,0 +1,5 @@
+/**animation.wxss**/
+.contain{width:100%;padding: 30rpx 20rpx;box-sizing: border-box;}   
+    .box{height: 730rpx;border:1rpx solid #ccc;position: relative;}
+    .anim-box{position:absolute;transform: translate(-50%,-50%);top:50%;left: 50%;width: 100rpx;height: 100rpx;background-color: red;}
+    .btn{background-color: #333;height: 60rpx;line-height: 60rpx;text-align: center;color: #fff;font-size: 30rpx;}

@@ -1,0 +1,8 @@
+<!--swiper.wxml-->
+<view class="contain">
+    <view class="section__title">movable-view区域小于movable-area</view>
+    <movable-area style="height: 200px;width: 200px;background: red;">
+            <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all" inertia="true">
+        </movable-view>
+    </movable-area>
+</view>

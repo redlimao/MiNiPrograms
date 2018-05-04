@@ -1,0 +1,6 @@
+/**radio.wxss**/
+.contain{padding: 30rpx 20rpx;}   
+    .wrap{display: flex;flex-wrap: wrap;}
+        .box{margin: 20rpx 10rpx;}
+            .tip{height: 50rpx;padding: 0 15rpx;border-radius: 5rpx;background-color: #ccc;color: #333;font-size: 30rpx;line-height: 50rpx;display: block;}
+            .tip.on{background-color: #f0ad4e;}

@@ -1,0 +1,7 @@
+<!--animation.wxml-->
+<view class="contain">
+    <view class="box">
+        <view class="anim-box" animation="{{animationData}}"></view>
+    </view>
+    <view class="btn" bindtap='bindAnim1'>动画一</view>
+</view>

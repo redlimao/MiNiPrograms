@@ -1,0 +1,22 @@
+<!--menus.wxml-->
+<view class="contain">
+    <view class="title">选项卡一</view>
+    <view class="wrap-a" bindtap='bindMenu1'>
+        <view class="a-item {{currentIndex1 == index+1 ? 'on' : ''}}" data-id='{{index+1}}' wx:for="{{item1}}" wx:key="{{index}}">{{item}}</view>
+    </view>
+
+    <view class="title">选项卡二</view>
+    <scroll-view scroll-x class="wrap-b" bindtap='bindMenu2'>
+        <view class="box-b">
+            <view class="b-item {{currentIndex2 == index+1 ? 'on' : ''}}" data-id='{{index+1}}' wx:for="{{item2}}" wx:key="{{index}}">{{item}}</view>        
+        </view>
+    </scroll-view>
+
+    <view class="title">选项卡三</view>
+    <scroll-view scroll-x class="wrap-c" bindtap='bindMenu3' scroll-with-animation="true" scroll-into-view="{{view_id}}" scroll-left="{{left}}">
+        <view class="box-c">
+            <view class="c-item {{currentIndex3 == index+1 ? 'on' : ''}}" data-id='{{index+1}}' id="{{'a' + index}}" wx:for="{{item2}}" wx:key="{{index}}">{{item}}</view>        
+            <view class="tip"></view>
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,16 @@
+<view class="contain">
+    <view class="btn-output" bindtap='bindStartRecorde'>开启录音功能</view>
+    <view class="btn-output" bindtap='bindStopRecorde'>停止录音功能</view>
+    <view class="btn-output" bindtap='bindPaly' data-key='{{key}}'>点击播放录音</view>
+    <view class="btn-output" bindtouchstart='touchdown' bindtouchend='touchup' data-key='{{key}}'>长按录音</view>
+    <text class="txt">{{text}}</text>
+</view>
+<view class="bg {{flag== 1 ? '' : 'on'}}">
+    <view class="box">
+        <view class="item anim1"></view>
+        <view class="item anim2"></view>
+        <view class="item anim3"></view>
+        <view class="item anim4"></view>
+        <view class="item anim5"></view>
+    </view>
+</view>

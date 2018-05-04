@@ -1,0 +1,8 @@
+<!--animtwo.wxml-->
+<view class="contain">
+    <view class="wrap">
+        <image src="../../../images/line1.png" class="img-a"></image>
+         <image src="../../../images/line1.png" class="img-b"></image>
+         <image src="../../../images/line1.png" class="img-c"></image>  
+    </view>
+</view>

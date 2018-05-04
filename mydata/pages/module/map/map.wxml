@@ -1,0 +1,3 @@
+<view class="contain">
+    <map id="map" longitude="108.89206999999998" latitude="34.21726462204803" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+</view>

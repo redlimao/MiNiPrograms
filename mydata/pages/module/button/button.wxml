@@ -1,0 +1,20 @@
+<!--button.wxml-->
+<view class="contain">
+    <button size='default'>default按钮</button>
+    <button size='mini'>mini按钮</button>
+    <button type='primary'>primary按钮</button>
+    <button type='default'>default按钮</button>
+    <button type='warn'>warn按钮</button>
+    <button plain='true'>背景色透明按钮</button>
+    <button disabled='true'>禁用按钮</button>
+    <button loading='true'>loading按钮</button>
+    <form>
+        <input type='text' value='' placeholder='请输入内容'></input>
+        <button form-type='submit'>确认表单</button>
+        <button form-type='reset'>重置表单</button>
+    </form>
+    <button open-type='contact'>打开客服</button>
+    <button open-type='share'>分享</button>
+    <button open-type='getPhoneNumber' bindgetphonenumber='bindNumber'>获取电话号码</button>
+    <button open-type='getUserInfo' bindgetuserinfo='bindUser'>获取用户信息</button>
+</view>

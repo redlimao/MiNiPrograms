@@ -1,0 +1,8 @@
+<!--animone.wxml-->
+<view class="contain">
+    <view class="item">	
+        <view class="circle circle-anim1"></view>
+        <view class="circle circle-anim2"></view>
+        <view class="circle circle-anim3"></view>
+    </view>
+</view>

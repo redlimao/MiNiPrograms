@@ -1,0 +1,6 @@
+<!--icon.wxml-->
+<view class="contain">
+    <view class='box'>
+        <icon wx:for="{{items}}" type="{{item}}" size='40'></icon>
+    </view>
+</view>

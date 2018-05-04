@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="wrap">
+    <view class="item" bindtap='{{item.active}}' wx:for="{{list}}" wx:key="{{index}}" data-id='{{index}}' bindtap='bindActive'>{{item.name}}</view>
+</view>

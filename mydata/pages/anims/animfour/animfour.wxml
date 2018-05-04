@@ -1,0 +1,7 @@
+<!--animtwo.wxml-->
+<view class="contain">
+    <view class="item">
+        <image class="i-img anim" src="../../../images/bg.png"></image>
+        <view class="info"></view>
+    </view>
+</view>

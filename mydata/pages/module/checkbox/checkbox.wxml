@@ -1,0 +1,11 @@
+<!--checkbox.wxml-->
+<view class="contain">
+    <form bindsubmit='bindSubmit'>
+        <checkbox-group bindchange="checkboxChange" name="checkboxs">
+            <label class="checkbox" wx:for="{{list}}" wx:key="{{index}}">
+                <checkbox value="{{item.name}}" checked="{{item.checked}}" color='blue' />{{item.name}}
+            </label>
+        </checkbox-group>
+        <button formType="submit">提交</button>
+    </form>
+</view>

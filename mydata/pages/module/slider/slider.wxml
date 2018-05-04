@@ -1,0 +1,5 @@
+<!--slider.wxml-->
+<view class="contain">
+    <text>滑块选择器</text>
+    <slider min='0' max='100' step='1' value='10' activeColor="#f0ad4e" backgroundColor="#e9e9e9" block-size="28" show-value="true" bindchange="bindSlider" bindchanging="bindSlidering"></slider>
+</view>
