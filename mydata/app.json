@@ -47,7 +47,9 @@
             "root": "pages/canvass/",
             "pages": [
                 "animation/animation",
-                "position/position"
+                "position/position",
+                "canvas_1/canvas_1",
+                "canvasDrawImage/canvasDrawImage"
             ]
         },
         {

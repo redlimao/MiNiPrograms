@@ -12,23 +12,8 @@ Page({
         wx.login({
             success: function (res) {
                 if (res.code) {
-                    //获取用户信息
-                    wx.getUserInfo({
-                        success: function (res) {
-                            console.log(res);
-                            // var userInfo = res.userInfo
-                            // var nickName = userInfo.nickName
-                            // var avatarUrl = userInfo.avatarUrl
-                            // var gender = userInfo.gender
-                            // var province = userInfo.province
-                            // var city = userInfo.city
-                            // var country = userInfo.country
-                            that.setData({
-                                userInfo: res.userInfo,
-                                anim1_flag : 2
-                            })
-                            console.log(that.data.userInfo)
-                        }
+                    that.setData({
+                        anim1_flag: 2
                     })
                 } else {
                     console.log('获取用户登录态失败！' + res.errMsg)

@@ -1,0 +1,8 @@
+<!--canvas_1.wxml-->
+<canvas canvas-id="myCanvas_1" class="canvas_1"></canvas>
+<canvas canvas-id="myCanvas_2" class="canvas_1" bindtouchstart='bindStart' bindtouchmove='bindMove' bindtouchend='bindEnd'></canvas>
+<view hidden='{{hidden}}'>坐标：（{{x}},{{y}}）</view>
+<view class='txt'>渐变</view>
+<canvas canvas-id='myCanvas_3' class="canvas_1"></canvas>
+<canvas canvas-id='myCanvas_4' class="canvas_1"></canvas>
+<canvas canvas-id='myCanvas_5' class="canvas_1"></canvas>

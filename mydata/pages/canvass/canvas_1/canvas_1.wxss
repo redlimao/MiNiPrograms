@@ -1,0 +1,3 @@
+/**canvas_1.wxss**/
+.txt{text-align: center;width: 100%;}
+.canvas_1{border: 1rpx solid #ccc;margin: 20rpx auto;}

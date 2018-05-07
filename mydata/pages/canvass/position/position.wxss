@@ -1,3 +1,6 @@
 /**position.wxss**/
-.contain{width:100%;padding: 30rpx 20rpx;box-sizing: border-box;height: 2000rpx;}   
+.contain{width:100%;}
+    .line-1{height: 1000rpx;width: 10rpx;background-color: red;}
+    .line-2{height: 1000rpx;width: 10rpx;background-color: green;}
+    .line-3{height: 1000rpx;width: 10rpx;background-color: blue;}
 .btn-place{height: 60rpx;line-height: 60rpx;text-align: center;color: #fff;background-color: #333;font-size: 30rpx;padding: 0 20rpx;position: fixed;right: 20rpx;bottom: 20rpx;}

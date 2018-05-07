@@ -9,6 +9,14 @@ Page({
             id: 1,
             name: '位置',
             url: '../canvass/position/position'
+        }, {
+            id: 2,
+            name: 'canvas_1',
+            url: '../canvass/canvas_1/canvas_1'
+        },{
+            id: 3,
+            name: 'canvasDrawImage',
+            url: '../canvass/canvasDrawImage/canvasDrawImage'
         }]
     },
     onLoad: function () {

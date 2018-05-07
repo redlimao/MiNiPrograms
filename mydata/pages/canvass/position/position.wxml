@@ -1,5 +1,7 @@
 <!--position.wxml-->
 <view class="contain">
-    
+    <view class="line-1"></view>
+    <view class="line-2"></view>
+    <view class="line-3"></view>
 </view>
 <view class="btn-place" bindtap='bindPlace'>滚动到指定位置</view>

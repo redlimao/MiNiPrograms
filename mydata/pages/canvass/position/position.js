@@ -9,7 +9,7 @@ Page({
     },
     bindPlace:function(e){
         wx.pageScrollTo({
-            scrollTop: 100,
+            scrollTop: 0,
             duration:300
         })
     }
