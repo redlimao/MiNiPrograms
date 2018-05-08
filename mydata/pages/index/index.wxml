@@ -1,7 +1,11 @@
 <!--index.wxml-->
 <view class="container">
-    <image class="user-img {{anim1_flag == 1 ? '' : 'anim-opacity'}}" src="{{userInfo.avatarUrl}}"></image>
-    <text class="user-name">{{userInfo.nickName}}</text>
+    <view class="box">
+        <button open-type='getUserInfo' bindgetuserinfo='bindGetUserInfo' class="btn-user {{flag == 1 ? 'on' : ''}}"></button>
+        <view class="btn-login {{flag == 1 ? 'on' : ''}}">点击登录</view>
+        <image class="user-img {{flag == 1 ? '' : 'on'}}" src="{{avatarUrl}}"></image>
+    </view>
+    <text class="user-name">{{nickName}}</text>
     <view class="btn-main" bindtap='bindList'>小功能</view>
     <view class="btn-main" bindtap='bindModule'>小程序组件</view>
     <view class="btn-main" bindtap='bindShop'>购物车</view>

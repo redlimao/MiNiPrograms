@@ -4,8 +4,7 @@ const app = getApp()
 
 Page({
     data: {
-        userInfo: {},
-        anim1_flag:1
+        flag:1
     },
     onLoad: function () {
         var that = this;
@@ -13,13 +12,38 @@ Page({
             success: function (res) {
                 if (res.code) {
                     that.setData({
-                        anim1_flag: 2
+                       
                     })
                 } else {
                     console.log('获取用户登录态失败！' + res.errMsg)
                 }
             }
         });
+    },
+    // 获取用户信息
+    bindGetUserInfo:function(e){
+        var that = this;
+        wx.showLoading({
+            title: '登陆中',
+            mask: true,
+            success: function(res) {
+                var rawData = JSON.parse(e.detail.rawData);
+                that.setData({
+                    flag: 2,
+                    avatarUrl: rawData.avatarUrl,
+                    nickName: rawData.nickName
+                })
+            },
+            complete:function(){
+                wx.hideLoading();
+                wx.showToast({
+                    title: '登陆成功',
+                    icon: 'none',
+                    mask: true,
+                })
+            }
+        })
+
     },
     bindShop:function(){
         wx.navigateTo({

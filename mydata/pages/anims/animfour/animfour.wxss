@@ -10,10 +10,6 @@
     100%{transform: translateX(-750rpx)}
 }
 
-/* @keyframes anim_b{
-    0%{transform: translateX(-876rpx) rotateX(180deg);}
-    100%{transform: translateX(0rpx) rotateX(180deg)}
-} */
 
 
 

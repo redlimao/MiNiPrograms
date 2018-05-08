@@ -1,7 +1,14 @@
 /**index.wxss**/
-.container{width: 100%;height: 100%;display: flex;align-items: center;flex-direction: column;background-color: #fff;padding-top: 20rpx;}
-.user-img{width: 128rpx;height: 128rpx;border-radius: 50%;opacity: 0;transition:opacity .5s ease;}
-.user-name{display: block; line-height: 80rpx;color: #333333;height: 80rpx;}
-.usermotto {margin-top: 100rpx;width: 500rpx;height: 80rpx;text-align: center;line-height: 80rpx;color: #333;border: 1rpx solid #333;border-radius: 5rpx;}
+.container{width: 100%;height: 100%;display: flex;align-items: center;flex-direction: column;background-color: #fff;padding-top: 40rpx;}
+.box{width: 128rpx;height: 128rpx;border-radius: 50%;position: relative;}
+    .btn-user{width: 128rpx;height: 128rpx;position: absolute;top:0;left: 0;z-index: 3;opacity: 0;display: none;}
+    .btn-user.on{display: block;}
+    .btn-login{width: 88rpx;height: 88rpx;position: absolute;top:0;left: 0;z-index: 2;text-align: center;line-height: 44rpx;font-size: 30rpx;padding: 20rpx;display: none;border:1rpx solid #ccc;color: #333;border-radius: 50%;}
+    .btn-login.on{display: block;}
+    .user-img{width: 128rpx;height: 128rpx;position: absolute;z-index: 2;display: none;border:1rpx solid #ccc;border-radius: 50%;}
+    .user-img.on{display:block;}
+
+.user-name{display: block; line-height: 80rpx;color: #333;height: 80rpx;}
+.usermotto {margin-top: 100rpx;width: 500rpx;height: 80rpx;text-align: center;line-height: 80rpx;color: #ccc;border-radius: 5rpx;}
 
 .anim-opacity{opacity: 1;}
