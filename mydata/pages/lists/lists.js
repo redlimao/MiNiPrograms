@@ -49,6 +49,10 @@ Page({
             id: 11,
             name: '数据缓存',
             url: '../list/storag/storag'
+        }, {
+            id: 12,
+            name: '多图片上传',
+            url: '../list/uploadImg/uploadImg'
         }]
     },
     onLoad: function () {

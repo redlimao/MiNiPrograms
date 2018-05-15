@@ -21,7 +21,8 @@
                 "menus/menus",
                 "pop/pop",
                 "shake/shake",
-                "storag/storag"
+                "storag/storag",
+                "uploadImg/uploadImg"
             ]
         },
         {

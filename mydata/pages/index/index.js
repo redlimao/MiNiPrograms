@@ -8,17 +8,22 @@ Page({
     },
     onLoad: function () {
         var that = this;
-        wx.login({
-            success: function (res) {
-                if (res.code) {
-                    that.setData({
-                       
-                    })
-                } else {
-                    console.log('获取用户登录态失败！' + res.errMsg)
-                }
+        //获取图像和姓名
+        wx.getStorage({
+            key: 'user',
+            success: function(res) {
+                that.setData({
+                    flag: 2,
+                    avatarUrl: res.data.avatarUrl,
+                    nickName: res.data.nickName
+                })
+            },
+            fail:function(res){
+                that.setData({
+                    flag: 1
+                })
             }
-        });
+        })
     },
     // 获取用户信息
     bindGetUserInfo:function(e){
@@ -32,6 +37,14 @@ Page({
                     flag: 2,
                     avatarUrl: rawData.avatarUrl,
                     nickName: rawData.nickName
+                })
+                var userinfo = {
+                    avatarUrl: rawData.avatarUrl,
+                    nickName: rawData.nickName
+                };
+                wx.setStorage({
+                    key: 'user',
+                    data: userinfo ,
                 })
             },
             complete:function(){

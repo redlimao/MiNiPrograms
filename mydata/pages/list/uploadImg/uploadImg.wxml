@@ -1,0 +1,8 @@
+<!--uploadImg.wxml-->
+<view class="wrap">
+    <view class="img-box">
+        <view class="img-txt">上传图片</view>
+        <image class="img" src=''></image>
+        <icon color='#ff5777' type='clear' size='30' class="btn-del"></icon>
+    </view>
+</view>

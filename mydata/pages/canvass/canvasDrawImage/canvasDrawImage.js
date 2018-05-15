@@ -9,13 +9,13 @@ Page({
     onLoad: function () {
         var that = this;
         var canvas_1 = wx.createCanvasContext('myCanvas_1');
+        // 获取屏幕的可使用窗口高度和宽度
         wx.getSystemInfo({
             success: function (res) {
                 that.setData({
                     windowWidth: res.windowWidth,
                     windowHeight : res.windowHeight
                 })
-                
             }
         })
         this.setData({
@@ -28,6 +28,7 @@ Page({
                 wx.getImageInfo({
                     src: res.tempFilePaths[0],
                     success: function (ress) {
+                        // num为图片宽度和高度的比例
                         var num = ress.width/ress.height;
                         that.setData({
                             canvas_img: res.tempFilePaths[0],
@@ -51,30 +52,27 @@ Page({
         var y_min = this.data.y;
         var x_max = this.data.windowWidth + x_min;
         var y_max = this.data.windowWidth + y_min;
+        // 获取起始坐标值
         var x = e.touches[0].x;
         var y = e.touches[0].y;
         this.setData({
             x_start : x,
             y_start : y
         })
-        // console.log(x_min,x,x_max,y_min,y,y_max);
+        // 如果起始坐标在裁剪区域内，则裁剪区域开启滑动
         if((x_min < x && x < x_max) && (y_min < y && y < y_max)){
-            this.setData({
-                slide:true
-            })
+            this.setData({slide:true})
         }else{
-            this.setData({
-                slide: false
-            })
+            this.setData({slide:false})
         }
-        console.log(this.data.slide);
     },
     //滑动中
     bindMove:function(e){
-        console.log(e);
+        // console.log(e);
         var that = this;
         if(this.data.slide){
             var canvas_1 = this.data.canvas_1;
+            //console.log(canvas_1);
             var x_min = this.data.x;
             var y_min = this.data.y;
 
@@ -82,12 +80,11 @@ Page({
             canvas_1.drawImage(that.data.canvas_img, 0, 0, 375, parseInt(375 / that.data.num));
             canvas_1.setFillStyle('rgba(0,0,0,0.5)');
             
-            console.log(y_min, e.touches[0].y - this.data.y_start, this.data.pic_width);
             if (y_min >= 0 && y_min <= this.data.pic_height - this.data.windowWidth){
                 if (e.touches[0].y > this.data.y_start){
-                    y_min = y_min + 1
+                    y_min = y_min + 1;
                 } else if (e.touches[0].y < this.data.y_start){
-                    y_min = y_min - 1
+                    y_min = y_min - 1;
                 }
             }else if(y_min < 0){
                 console.log('12');
