@@ -38,7 +38,7 @@ Page({
                         })
                         canvas_1.drawImage(res.tempFilePaths[0], 0, 0, 375, parseInt(375/num));
                         canvas_1.setFillStyle('rgba(0,0,0,0.5)');
-                        canvas_1.fillRect(that.data.x, that.data.y, that.data.windowWidth, that.data.windowWidth);
+                        canvas_1.fillRect(that.data.x, that.data.y, 375, 375);
                         canvas_1.draw();
                     }
                 })
@@ -68,32 +68,41 @@ Page({
     },
     //滑动中
     bindMove:function(e){
-        // console.log(e);
         var that = this;
         if(this.data.slide){
             var canvas_1 = this.data.canvas_1;
-            //console.log(canvas_1);
             var x_min = this.data.x;
             var y_min = this.data.y;
+            var flag_height = this.data.pic_height;
+            if (flag_height > this.data.windowHeight){
+                flag_height = this.data.windowHeight
+            }
 
             console.log('裁剪区域左上角y轴' + this.data.y);
             canvas_1.drawImage(that.data.canvas_img, 0, 0, 375, parseInt(375 / that.data.num));
             canvas_1.setFillStyle('rgba(0,0,0,0.5)');
-            
-            if (y_min >= 0 && y_min <= this.data.pic_height - this.data.windowWidth){
-                if (e.touches[0].y > this.data.y_start){
-                    y_min = y_min + 1;
-                } else if (e.touches[0].y < this.data.y_start){
-                    y_min = y_min - 1;
-                }
-            }else if(y_min < 0){
-                console.log('12');
-                // this.setData({
-                //     y: 0
-                // })
-            } else if (y_min > this.data.pic_height - this.data.windowWidth){
-                // y_min = this.data.pic_height - this.data.windowWidth
+            if(y_min < 0){
+                y_min = 0
+            } else if (y_min >= 0 && y_min <= flag_height - 375){
+                y_min = y_min + 1;
+            } else if (y_min > flag_height - 375){
+                y_min = flag_height - 375
             }
+            console.log(y_min, e.touches[0].y)
+            // if(y_min >= 0 && y_min <= this.data.pic_height - this.data.windowWidth){
+            //     if (e.touches[0].y > this.data.y_start){
+            //         y_min = y_min + 1;
+            //     } else if (e.touches[0].y < this.data.y_start){
+            //         y_min = y_min - 1;
+            //     }
+            // }else if(y_min < 0){
+            //     console.log('12');
+            //     // this.setData({
+            //     //     y: 0
+            //     // })
+            // }else if(y_min > this.data.pic_height - this.data.windowWidth){
+            //     // y_min = this.data.pic_height - this.data.windowWidth
+            // }
             canvas_1.fillRect(that.data.x, y_min, that.data.windowWidth, that.data.windowWidth);
             canvas_1.draw();
             this.setData({
@@ -103,7 +112,7 @@ Page({
     },
     //滑动结束
     bindEnd:function(){
-        // console.log(this.data.x,this.data.y);
+        
     },
     bindGetImg: function () {
         var that = this;
