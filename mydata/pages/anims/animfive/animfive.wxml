@@ -1,0 +1,11 @@
+<!--animfive.wxml-->
+<view class="box">
+    <view class="circle anim"></view>
+    <view class="circle"></view>
+    <view class="circle"></view>
+    <view class="circle"></view>
+    <view class="circle"></view>
+    <view class="circle"></view>
+    <view class="circle"></view>
+    <view class="circle"></view>
+</view>

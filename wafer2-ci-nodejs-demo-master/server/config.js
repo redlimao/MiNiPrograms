@@ -3,7 +3,7 @@ const CONF = {
     rootPathname: '',
 
     // 微信小程序 App ID
-    appId: 'wxfe7a9ca3dd15d742',
+    appId: '',
 
     // 微信小程序 App Secret
     appSecret: '',
@@ -21,14 +21,23 @@ const CONF = {
         port: 3306,
         user: 'root',
         db: 'cAuth',
-        pass: 'wxfe7a9ca3dd15d742',
+        pass: '你的小程序的AppID',
         char: 'utf8mb4'
     },
 
     cos: {
         /**
-         * 地区简称
-         * @查看 https://cloud.tencent.com/document/product/436/6224
+         * 区域
+         * 北京一区（华北）ap-beijing-1
+         * 北京          ap-beijing
+         * 上海（华东）   ap-shanghai
+         * 广州（华南）   ap-guangzhou
+         * 成都（西南）   ap-chengdu
+         * 新加坡        ap-singapore
+         * 香港          ap-hongkong
+         * 多伦多        na-toronto
+         * 法兰克福      eu-frankfurt
+         * @see https://www.qcloud.com/document/product/436/6224
          */
         region: 'ap-guangzhou',
         // Bucket 名称
@@ -39,7 +48,15 @@ const CONF = {
 
     // 微信登录态有效期
     wxLoginExpires: 7200,
-    wxMessageToken: 'abcdefgh'
+    wxMessageToken: 'abcdefgh',
+
+    serverHost: 'localhost',
+    tunnelServerUrl: '',
+    tunnelSignatureKey: '',
+    // 腾讯云相关配置可以查看云 API 秘钥控制台：https://console.qcloud.com/capi
+    qcloudAppId: 123000000,
+    qcloudSecretId: '',
+    qcloudSecretKey: ''
 }
 
 module.exports = CONF

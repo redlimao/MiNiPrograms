@@ -10,20 +10,29 @@ Page({
     bindChooseGPS:function(){
         var that = this;
         var address1 = this.data.address1;
-        wx.getLocation({
-            type: 'wgs84',
+        wx.chooseLocation({
             success: function (res) {
-                var latitude = res.latitude
-                var longitude = res.longitude
-                wx.chooseLocation({
-                    success: function (res) {
-                        that.setData({
-                            address1: res.address
-                        })
-                    },
-                })  
-            }
-        })
+                console.log(res);
+                that.setData({
+                    address1: res.address
+                })
+            },
+        }) 
+        // wx.getLocation({
+        //     type: 'wgs84',
+        //     success: function (res) {
+        //         var latitude = res.latitude
+        //         var longitude = res.longitude
+        //         wx.chooseLocation({
+        //             success: function (res) {
+        //                 console.log(res);
+        //                 that.setData({
+        //                     address1: res.address
+        //                 })
+        //             },
+        //         })  
+        //     }
+        // })
  
     }, 
     bindOpenGPS: function () {

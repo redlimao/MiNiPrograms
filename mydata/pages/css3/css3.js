@@ -17,6 +17,10 @@ Page({
             id: 3,
             name: '边框动画',
             url: '../anims/animfour/animfour'
+        }, {
+            id: 4,
+            name: '加载动画',
+            url: '../anims/animfive/animfive'
         }]
     },
     onLoad: function () {
